@@ -14,7 +14,7 @@ with mp_hands.Hands(
 results = hands.process(rgb_frame)
 В results хранятся значения контрольных точек кисти (всего 21 точка). Для каждой точки заданы относительные координаты x, y, z на изображении.
  
-Рисунок 2. Представление кисти в модели MediaPipe.
+
 Отображение скелета кисти на кадре, полученном из OpenCV, можно сделать следующим методом.
 for hand_landmarks in results.multi_hand_landmarks:
     mp_drawing.draw_landmarks(frame, hand_landmarks,
